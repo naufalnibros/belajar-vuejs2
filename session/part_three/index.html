@@ -1,0 +1,25 @@
+<!-- Data Binding -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="../../src/vue.min.js" charset="utf-8"></script>
+  <body>
+
+    <div id="naufalApp">
+      <p>My name is {{ name }}</p>
+      <p>I'm a {{ job }}</p>
+      <input type="text" v-bind:value="name"> <br><br>
+      <a href="{{website}}">MY WEBSITE(NO BINDING)</a> <br> <br>
+      <a :href="website">MY WEBSITE(WITH BINDING(1))</a> <br> <br>
+      <a v-bind:href="website">MY WEBSITE(WITH BINDING(2))</a> <br>
+      <p>{{websiteTag}}</p>
+      <p v-html="websiteTag"></p>
+    </div>
+
+  </body>
+  <script src="app.js" charset="utf-8"></script>
+</html>
