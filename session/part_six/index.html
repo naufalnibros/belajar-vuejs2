@@ -1,0 +1,28 @@
+<!-- Computed Properties -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="../../src/vue.min.js" charset="utf-8"></script>
+  <body>
+    <div id="naufalApp">
+      <div>
+        <button type="button" name="button" @click="addA">ADD A</button>
+        <button type="button" name="button" @click="a--">SUBTRACT A</button> <br>
+        <p>{{ a }}</p>
+        <button type="button" name="button" @click="addB">ADD B</button>
+        <button type="button" name="button" @click="b--">SUBTRACT B</button> <br>
+        <p>{{ b }}</p>
+      </div>
+
+      <div>
+        <p>updateA: {{ updateA }}</p>
+        <p>updateB: {{ updateB }}</p>
+      </div>
+
+    </div>
+  </body>
+  <script src="app.js" charset="utf-8"></script>
+</html>

@@ -1,0 +1,33 @@
+<!-- Dynamic CSS Class -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="../../src/vue.min.js" charset="utf-8"></script>
+  <body>
+    <div id="naufalApp">
+      <h2>Dynamic Css</h2>
+
+      <div>
+        <p>Example One</p>
+        <div v-on:click="available = !available" v-bind:class="{cssavailable: available}">
+          <span>STATUS</span>
+        </div>
+      </div>
+
+      <div>
+        <p>Example Two</p>
+        <button type="button" v-on:click="present = !present" name="button">UPDATE COLOR</button>
+        <button type="button" v-on:click="nearby = !nearby" name="button">NEARBY</button>
+        <div v-bind:class="compareClass">
+          <span>STATUS</span>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="app.js" charset="utf-8"></script>
+</html>
